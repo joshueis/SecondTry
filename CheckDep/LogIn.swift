@@ -11,7 +11,7 @@ import Foundation
 
 class LogIn: UIViewController {
 
-    
+   // let login : LogIn = LogIn(nibName: "LogIn", bundle:nil)
     
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var userNameField: UITextField!
@@ -20,7 +20,6 @@ class LogIn: UIViewController {
     override func viewDidLoad() {
        
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -28,6 +27,11 @@ class LogIn: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //var destViewController : ViewController = segue.destination as! ViewController
+    
     }
     @IBAction func login(_ sender: UIButton) {
         //testLabel.text = userNameField.text! + passwordField.text!
@@ -83,7 +87,9 @@ class LogIn: UIViewController {
 //        }
 //        
 //        task.resume()
-    
+        if userNameField.text! == "is" {
+            performSegue(withIdentifier: "authenticated", sender: self)
+        }
     }
     
 

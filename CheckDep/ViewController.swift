@@ -16,12 +16,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let balanceView : Balance = Balance  (nibName: "Balance", bundle:nil)
         let checkView : CheckView = CheckView(nibName: "CheckView", bundle:nil)
-        let login : LogIn = LogIn(nibName: "LogIn", bundle:nil)
+       // let login : LogIn = LogIn(nibName: "LogIn", bundle:nil)
         
         //add the views to the scroll view
-        self.addChildViewController(login)
-        self.scrollView.addSubview(login.view)
-        login.didMove(toParentViewController: self)
+        //self.addChildViewController(login)
+        //self.scrollView.addSubview(login.view)
+        //login.didMove(toParentViewController: self)
         
         self.addChildViewController(balanceView)
         self.scrollView.addSubview(balanceView.view)
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         checkView.view.frame = checkFrame
         
         
-        self.scrollView.contentSize = CGSize(width: self.view.frame.width * 3, height: self.view.frame.height)
+        self.scrollView.contentSize = CGSize(width: self.view.frame.width * 2, height: self.view.frame.height)
     }
 
     override func didReceiveMemoryWarning() {
