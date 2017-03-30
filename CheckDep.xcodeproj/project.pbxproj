@@ -53,6 +53,7 @@
 		F99C73931E8213C9006E40E8 /* AccountHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHolder.swift; sourceTree = "<group>"; };
 		F99C73951E8213D8006E40E8 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		F99C73971E8216B3006E40E8 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		F9ADB8861E8DB9580059169B /* jsonfile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonfile.json; sourceTree = "<group>"; };
 		F9E15B961E7BABFA006C99E2 /* CheckDep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckDep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E15B991E7BABFA006C99E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E15B9B1E7BABFA006C99E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 				F99C73931E8213C9006E40E8 /* AccountHolder.swift */,
 				F99C73951E8213D8006E40E8 /* Account.swift */,
 				F99C73971E8216B3006E40E8 /* Transaction.swift */,
+				F9ADB8861E8DB9580059169B /* jsonfile.json */,
 			);
 			path = CheckDep;
 			sourceTree = "<group>";

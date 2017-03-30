@@ -91,7 +91,9 @@ class LogIn: UIViewController {
             performSegue(withIdentifier: "authenticated", sender: self)
         }
     }
-    
+    func parseJson(){
+        
+    }
 
     /*
     // MARK: - Navigation

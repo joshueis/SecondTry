@@ -1,0 +1,50 @@
+{
+    "userName": "MultiPolygon",
+    "password" : "asdfkjasd",
+    "name" : "",
+    "lastName" : "",
+    "id": "MultiPolygon",
+    "accounts" : [
+                  {
+                    "id" : "234234",
+                    "type" : "savings",
+                    "balance" : "234234.234",
+                    "transactions": [
+                                     {
+                                        "date" : "03/13/17",
+                                        "amount": " 234.43",
+                                     "description" : "Walmart"
+                                
+                                     },
+                                     {
+                                     "date" : "02/13/17",
+                                     "amount": " 34.43",
+                                     "description" : "Amazon"
+                                     
+                                     }]
+                  
+                  },
+                  {
+                  "id" : "232234",
+                  "type" : "checking",
+                  "balance" : "2344.234",
+                  "transactions": [
+                                   {
+                                   "date" : "03/13/17",
+                                   "amount": " 234.43",
+                                   "description" : "Ross"
+                                   
+                                   },
+                                   {
+                                   "date" : "02/13/17",
+                                   "amount": " 34.43",
+                                   "description" : "Home"
+                                   
+                                   }]
+                  
+                  }],
+    "stret" : "",
+    "city" : "",
+    "state": "MultiPolygon",
+    "zipcode" : "asdfkjasd"
+}

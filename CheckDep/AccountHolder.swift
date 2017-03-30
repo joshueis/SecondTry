@@ -9,6 +9,34 @@
 import Foundation
 
 struct AccountHolder{
+    init(json: [String:Any]){
+        guard let name = json["name"] as? String,
+            let lastName = json["lastName"],
+            let id = json["id"],
+            let accountJson = json["accounts"]
+            let street = json["street"],
+            let city = json["city"],
+            let state = json["state"],
+            
+        let mealsJSON = json["meals"] as? [String]
+        else {
+            return nil
+        }
+        
+        var meals: Set<Meal> = []
+        for string in mealsJSON {
+            guard let meal = Meal(rawValue: string) else {
+                return nil
+            }
+            
+            meals.insert(meal)
+        }
+        
+        self.name = name
+        self.coordinates = (latitude, longitude)
+        self.meals = meals
+    }
+    }
     var name :String
     var lastName: String
     var id: NSInteger
