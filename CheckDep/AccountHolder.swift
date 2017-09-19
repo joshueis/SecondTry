@@ -9,38 +9,11 @@
 import Foundation
 
 struct AccountHolder{
-    init(json: [String:Any]){
-        guard let name = json["name"] as? String,
-            let lastName = json["lastName"],
-            let id = json["id"],
-            let accountJson = json["accounts"]
-            let street = json["street"],
-            let city = json["city"],
-            let state = json["state"],
-            
-        let mealsJSON = json["meals"] as? [String]
-        else {
-            return nil
-        }
-        
-        var meals: Set<Meal> = []
-        for string in mealsJSON {
-            guard let meal = Meal(rawValue: string) else {
-                return nil
-            }
-            
-            meals.insert(meal)
-        }
-        
-        self.name = name
-        self.coordinates = (latitude, longitude)
-        self.meals = meals
-    }
-    }
+
     var name :String
-    var lastName: String
+    
     var id: NSInteger
-    var Account : Account
+    var account = Array<Account>()
     var Street :String
     var Street2 : String? = nil
     var City : String //City = "Rexburg"
@@ -55,6 +28,56 @@ struct AccountHolder{
             return 00000
         }
     }
+   
+    init?(data: [String:Any], file: Bool){
+        var json = data
+        if file == true
+        {
+            if let path = Bundle.main.path(forResource: "jsonfile", ofType: "json")
+            {
+                do {
+                    let jsonData = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+                    
+                    let jsonResult = try? JSONSerialization.jsonObject(with: jsonData.data(using: .utf8)!, options: [])
+                    json = jsonResult as! [String : Any]
+                    
+                    
+                } catch let error as NSError {
+                    print("Error, \(error)")
+                }
+            }
+        }
+        guard let name = json["name"] as? String,
+        
+            let id = json["id"],
+            let accountJson = json["accounts"] as? [[String: Any]],
+            let street = json["street"],
+            let city = json["city"],
+            let state = json["state"]
+            
+            else {
+                return nil
+            }
+        
+        for accountItem in accountJson {
+            guard let item = Account(json: accountItem) else {
+                return nil
+            }
+            account.append(item)
+
+        }
+        
+        self.name = name
+      
+        self.id = NSInteger(String(describing: id))!
+        self.Street = street as! String
+        self.City = city as! String
+        self.State = state as! String
+        print("initializer cmpleted")
+    }
+        
+         //   Account : [Account]//
+    
     //computed property
     var address : String {
         get {

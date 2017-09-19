@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F90BE3BF1E7BAF300050FF80 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90BE3BD1E7BAF300050FF80 /* Balance.swift */; };
-		F90BE3C01E7BAF300050FF80 /* Balance.xib in Resources */ = {isa = PBXBuildFile; fileRef = F90BE3BE1E7BAF300050FF80 /* Balance.xib */; };
 		F90BE3CB1E7BBD9E0050FF80 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90BE3C91E7BBD9E0050FF80 /* LogIn.swift */; };
 		F90BE3CE1E7BBEA30050FF80 /* 3349988296_caa41c78c4_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F90BE3CD1E7BBEA30050FF80 /* 3349988296_caa41c78c4_o.jpg */; };
+		F936E64F1E940A4D003347E3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F936E64E1E940A4D003347E3 /* TableViewController.swift */; };
 		F99C73911E810BAA006E40E8 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C738F1E810BAA006E40E8 /* CheckView.swift */; };
-		F99C73921E810BAA006E40E8 /* CheckView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99C73901E810BAA006E40E8 /* CheckView.xib */; };
 		F99C73941E8213C9006E40E8 /* AccountHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C73931E8213C9006E40E8 /* AccountHolder.swift */; };
 		F99C73961E8213D8006E40E8 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C73951E8213D8006E40E8 /* Account.swift */; };
 		F99C73981E8216B3006E40E8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C73971E8216B3006E40E8 /* Transaction.swift */; };
+		F9ADB8881E937E9E0059169B /* Image-Edition-Tools-Screenshot-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9ADB8871E937E9E0059169B /* Image-Edition-Tools-Screenshot-icon.png */; };
 		F9E15B9A1E7BABFA006C99E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E15B991E7BABFA006C99E2 /* AppDelegate.swift */; };
 		F9E15B9C1E7BABFA006C99E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E15B9B1E7BABFA006C99E2 /* ViewController.swift */; };
 		F9E15B9F1E7BABFA006C99E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E15B9D1E7BABFA006C99E2 /* Main.storyboard */; };
@@ -45,15 +45,15 @@
 
 /* Begin PBXFileReference section */
 		F90BE3BD1E7BAF300050FF80 /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
-		F90BE3BE1E7BAF300050FF80 /* Balance.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Balance.xib; sourceTree = "<group>"; };
 		F90BE3C91E7BBD9E0050FF80 /* LogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		F90BE3CD1E7BBEA30050FF80 /* 3349988296_caa41c78c4_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3349988296_caa41c78c4_o.jpg; sourceTree = "<group>"; };
+		F936E64E1E940A4D003347E3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F99C738F1E810BAA006E40E8 /* CheckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
-		F99C73901E810BAA006E40E8 /* CheckView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckView.xib; sourceTree = "<group>"; };
 		F99C73931E8213C9006E40E8 /* AccountHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHolder.swift; sourceTree = "<group>"; };
 		F99C73951E8213D8006E40E8 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		F99C73971E8216B3006E40E8 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		F9ADB8861E8DB9580059169B /* jsonfile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonfile.json; sourceTree = "<group>"; };
+		F9ADB8871E937E9E0059169B /* Image-Edition-Tools-Screenshot-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Image-Edition-Tools-Screenshot-icon.png"; sourceTree = "<group>"; };
 		F9E15B961E7BABFA006C99E2 /* CheckDep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckDep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E15B991E7BABFA006C99E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E15B9B1E7BABFA006C99E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,19 +118,19 @@
 		F9E15B981E7BABFA006C99E2 /* CheckDep */ = {
 			isa = PBXGroup;
 			children = (
+				F9ADB8871E937E9E0059169B /* Image-Edition-Tools-Screenshot-icon.png */,
 				F90BE3CD1E7BBEA30050FF80 /* 3349988296_caa41c78c4_o.jpg */,
 				F9E15B991E7BABFA006C99E2 /* AppDelegate.swift */,
-				F9E15B9B1E7BABFA006C99E2 /* ViewController.swift */,
 				F90BE3C91E7BBD9E0050FF80 /* LogIn.swift */,
+				F90BE3BD1E7BAF300050FF80 /* Balance.swift */,
+				F99C738F1E810BAA006E40E8 /* CheckView.swift */,
+				F9E15B9B1E7BABFA006C99E2 /* ViewController.swift */,
+				F936E64E1E940A4D003347E3 /* TableViewController.swift */,
 				F9E15B9D1E7BABFA006C99E2 /* Main.storyboard */,
 				F9E15BA31E7BABFA006C99E2 /* Assets.xcassets */,
 				F9E15BA51E7BABFA006C99E2 /* LaunchScreen.storyboard */,
 				F9E15BA81E7BABFA006C99E2 /* Info.plist */,
 				F9E15BA01E7BABFA006C99E2 /* CheckDep.xcdatamodeld */,
-				F90BE3BD1E7BAF300050FF80 /* Balance.swift */,
-				F90BE3BE1E7BAF300050FF80 /* Balance.xib */,
-				F99C738F1E810BAA006E40E8 /* CheckView.swift */,
-				F99C73901E810BAA006E40E8 /* CheckView.xib */,
 				F99C73931E8213C9006E40E8 /* AccountHolder.swift */,
 				F99C73951E8213D8006E40E8 /* Account.swift */,
 				F99C73971E8216B3006E40E8 /* Transaction.swift */,
@@ -269,8 +269,7 @@
 			files = (
 				F9E15BA71E7BABFA006C99E2 /* LaunchScreen.storyboard in Resources */,
 				F9E15BA41E7BABFA006C99E2 /* Assets.xcassets in Resources */,
-				F90BE3C01E7BAF300050FF80 /* Balance.xib in Resources */,
-				F99C73921E810BAA006E40E8 /* CheckView.xib in Resources */,
+				F9ADB8881E937E9E0059169B /* Image-Edition-Tools-Screenshot-icon.png in Resources */,
 				F9E15B9F1E7BABFA006C99E2 /* Main.storyboard in Resources */,
 				F90BE3CE1E7BBEA30050FF80 /* 3349988296_caa41c78c4_o.jpg in Resources */,
 			);
@@ -303,6 +302,7 @@
 				F9E15B9A1E7BABFA006C99E2 /* AppDelegate.swift in Sources */,
 				F90BE3BF1E7BAF300050FF80 /* Balance.swift in Sources */,
 				F99C73961E8213D8006E40E8 /* Account.swift in Sources */,
+				F936E64F1E940A4D003347E3 /* TableViewController.swift in Sources */,
 				F9E15BA21E7BABFA006C99E2 /* CheckDep.xcdatamodeld in Sources */,
 				F99C73911E810BAA006E40E8 /* CheckView.swift in Sources */,
 				F99C73981E8216B3006E40E8 /* Transaction.swift in Sources */,

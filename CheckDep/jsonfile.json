@@ -1,9 +1,9 @@
 {
-    "userName": "MultiPolygon",
-    "password" : "asdfkjasd",
-    "name" : "",
-    "lastName" : "",
-    "id": "MultiPolygon",
+    "userName": "Megan123",
+    "password" : "Megan123",
+    "name" : "Megan",
+    "lastName" : "Carlson",
+    "id": "345345",
     "accounts" : [
                   {
                     "id" : "234234",
@@ -13,7 +13,7 @@
                                      {
                                         "date" : "03/13/17",
                                         "amount": " 234.43",
-                                     "description" : "Walmart"
+                                        "description" : "Walmart"
                                 
                                      },
                                      {
@@ -45,6 +45,6 @@
                   }],
     "stret" : "",
     "city" : "",
-    "state": "MultiPolygon",
-    "zipcode" : "asdfkjasd"
+    "state": "California",
+    "zipcode" : ""
 }

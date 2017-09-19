@@ -10,11 +10,28 @@ import Foundation
 
 struct Account{
     var id : NSInteger
-    var type : Type
+    var type : String
     var balance : NSInteger
-    var transactions : [Transaction]
-    
-}
-enum Type : String {
-    case Savings, Checking
+    var transactions = Array<Transaction>()
+   
+    init?(json:[String:Any]){
+        guard let type = json["type"] as? String,
+            let id = json["id"],
+            let balance = json["balance"],
+            let transactionsJson = json["transactions"] as? [[String: Any]]
+        
+            else {
+                return nil
+        }
+        for transactionJson in transactionsJson {//as! Array<[String: Any]>{
+            guard let transaction = Transaction(json: transactionJson as! [String : String]) else {
+                return nil
+            }
+            self.transactions.append(transaction)
+
+        }
+        self.balance = balance as! NSInteger
+        self.id = id as! NSInteger
+        self.type = type 
+    }
 }
